@@ -1,27 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Samuel Gatimu Kariuki — Electrical & Electronic Engineer</title>
-
-  <!-- Font Awesome (icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Top navbar (desktop) -->
-  <header class="topnav" role="navigation" aria-label="Main navigation">
+  <header class="topnav" role="navigation">
     <div class="brand">
       <img src="assets/img/logo.png" alt="Logo" class="logo" />
       <h1>Samuel Gatimu</h1>
     </div>
-
     <div class="nav-actions">
-      <nav class="nav-links" aria-label="Primary links">
+      <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#labs">Lab Moments</a>
         <a href="#projects">Projects</a>
@@ -29,19 +23,12 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-label="Open menu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <a class="cta-resume" href="assets/resume.pdf" target="_blank" aria-label="Download resume">
-        <i class="fa-solid fa-download"></i> Resume
-      </a>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <a class="cta-resume" href="assets/resume.pdf" target="_blank"><i class="fa-solid fa-download"></i> Resume</a>
     </div>
   </header>
 
-  <!-- Mobile sidebar (slides in) -->
-  <aside id="sidebar" class="sidebar" aria-hidden="true" aria-label="Mobile navigation">
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
     <nav class="mobile-nav">
       <a href="#home" class="mobile-link">Home</a>
       <a href="#labs" class="mobile-link">Lab Moments</a>
@@ -54,42 +41,30 @@
   </aside>
 
   <main>
-    <!-- HOME / HERO -->
-    <section id="home" class="hero" tabindex="-1" aria-labelledby="home-title">
-      <div class="tech-bg" aria-hidden="true"></div>
-      <div class="grid-overlay" aria-hidden="true"></div>
-
-      <div class="hero-content" role="region" aria-label="Hero">
+    <section id="home" class="hero" tabindex="-1">
+      <div class="tech-bg"></div>
+      <div class="grid-overlay"></div>
+      <div class="hero-content">
         <div class="headshot-wrap">
-          <img src="assets/img/headshot.jpg" alt="Samuel Gatimu headshot" class="headshot-glow reveal" data-reveal-delay="150" />
+          <img src="assets/img/headshot.jpg" alt="Samuel" class="headshot-glow reveal" />
           <span class="badge">Electrical & Electronic</span>
         </div>
-
         <div>
-          <h2 id="home-title" class="hero-title reveal" data-reveal-delay="250">Samuel Gatimu Kariuki</h2>
-          <div class="hero-tagline reveal" data-reveal-delay="320">Electrical & Electronic Engineering Student — Chuka University</div>
-
-          <p class="belief reveal" data-reveal-delay="400">
-            <span id="typed-line">I transform electrical ideas into intelligent systems that power innovation.</span>
-          </p>
-
-          <div class="social reveal" data-reveal-delay="500" aria-label="Social links">
-            <a href="mailto:samuelgatimu@students.chuka.ac.ke" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://github.com/yourGH" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourLI" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-
-          <div style="margin-top:16px" class="reveal" data-reveal-delay="580">
-            <a class="cta-resume" href="assets/resume.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+          <h2 class="hero-title reveal">Samuel Gatimu Kariuki</h2>
+          <div class="hero-tagline reveal">Engineering Student — Chuka University</div>
+          <p class="belief reveal"><span id="typed-line">I transform electrical ideas into intelligent systems that power innovation.</span></p>
+          <div class="social reveal">
+            <a href="mailto:samuelgatimu@students.chuka.ac.ke"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/yourGH" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourLI" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- LABS -->
-    <section id="labs" class="section" aria-labelledby="labs-title">
-      <h2 id="labs-title" class="reveal">Lab Moments & Field Work</h2>
-      <div class="project-grid" style="margin-top:12px">
+    <section id="labs" class="section">
+      <h2 class="reveal">Lab Moments & Field Work</h2>
+      <div class="project-grid">
         <div class="card reveal">
           <img src="assets/img/lab1.jpg" alt="Circuit lab" />
           <strong class="card-title">Circuit Analysis Lab</strong>
@@ -103,56 +78,53 @@
       </div>
     </section>
 
-    <!-- PROJECTS (click to open lightbox) -->
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <h2 id="projects-title" class="reveal">Projects</h2>
-      <div class="project-grid" style="margin-top:12px">
-        <!-- Project cards: data- attributes feed the lightbox -->
+    <section id="projects" class="section">
+      <h2 class="reveal">Projects</h2>
+      <div class="project-grid">
         <article class="card project-card reveal" tabindex="0"
                  data-title="Arduino Energy Meter"
-                 data-desc="Non-invasive current sensing, data logging with a web dashboard; measured error < 3%."
+                 data-desc="Non-invasive current sensing, data logging with a web dashboard."
                  data-img="assets/img/proj1.jpg"
-                 data-code="https://github.com/yourGH/arduino-energy-meter"
-                 data-video=""
-                 >
-          <img src="assets/img/proj1-thumb.jpg" alt="Arduino energy meter thumbnail" />
+                 data-code="https://github.com/yourGH/arduino-energy-meter">
+          <img src="assets/img/proj1-thumb.jpg" alt="Energy meter" />
           <h3 class="card-title">Arduino Energy Meter</h3>
-          <p class="card-desc">Current sensing, data-logging & dashboard.</p>
+          <p class="card-desc">Current sensing & dashboard.</p>
         </article>
-
-        <article class="card project-card reveal" tabindex="0"
-                 data-title="Autonomous Line Follower"
-                 data-desc="PID-tuned line follower using IR sensors and STM32 controller—2nd place at Chuka Tech Expo 2023."
-                 data-img="assets/img/proj2.jpg"
-                 data-code="https://github.com/yourGH/line-follower"
-                 data-video=""
-                 >
-          <img src="assets/img/proj2-thumb.jpg" alt="Line follower robot thumbnail" />
-          <h3 class="card-title">Autonomous Line Follower</h3>
-          <p class="card-desc">PID tuning & reliable navigation.</p>
-        </article>
-
-        <!-- Add more project-card elements as needed -->
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="reveal">Core Skills</h2>
-      <ul class="skills-list reveal" style="margin-top:12px">
+    <section id="research" class="section bg-alt">
+      <h2 class="reveal">Research Toolbox</h2>
+      <div class="research-grid">
+        <div class="card tool reveal">
+          <i class="fa-brands fa-youtube" style="font-size: 2rem; color: #ff0000;"></i>
+          <h3>Engineering Research</h3>
+          <form action="https://www.youtube.com/results" target="_blank" style="margin-top:10px;">
+            <input type="text" name="search_query" placeholder="Search components..." required style="padding:8px; border-radius:5px; border:1px solid var(--cyan); background:transparent; color:white;"/>
+            <button type="submit" class="btn outline" style="padding:5px 10px;">Go</button>
+          </form>
+        </div>
+        <div class="card tool reveal">
+          <i class="fa-solid fa-robot" style="font-size: 2rem; color: var(--cyan);"></i>
+          <h3>AI Assistant</h3>
+          <a class="btn" href="https://chat.openai.com" target="_blank" style="margin-top:10px;">Launch ChatGPT</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="reveal">Core Competencies</h2>
+      <ul class="skills-list reveal">
         <li>PCB Design (KiCad, EasyEDA)</li>
         <li>Embedded C / Arduino / STM32</li>
         <li>MATLAB / Simulink</li>
-        <li>PLC & Automation</li>
-        <li>Python for Data Analysis</li>
-        <li>SCADA / HMI Systems</li>
+        <li>PLC & SCADA</li>
       </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="reveal">Contact</h2>
-      <div style="margin-top:12px;color:var(--muted)">
+    <section id="contact" class="section">
+      <h2 class="reveal">Contact</h2>
+      <div class="contact-box reveal">
         <p>Email: <a href="mailto:samuelgatimu83@students.chuka.ac.ke">samuelgatimu83@students.chuka.ac.ke</a></p>
         <p>Phone: <a href="tel:+254724472269">+254 724 472269</a></p>
         <p>Location: Chuka, Kenya</p>
@@ -160,32 +132,27 @@
     </section>
   </main>
 
-  <!-- LIGHTBOX / IMAGE-FOCUSED MODAL (Style D) -->
-  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="lightbox-content" role="document">
-      <button class="lightbox-close" aria-label="Close (Esc)"><i class="fa-solid fa-xmark"></i></button>
-      <div class="lightbox-media">
-        <img id="lb-image" src="" alt="Project preview" />
-      </div>
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-content">
+      <button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-media"><img id="lb-image" src="" alt="Project preview" /></div>
       <div class="lightbox-info">
         <h3 id="lb-title"></h3>
         <p id="lb-desc"></p>
         <div class="lightbox-actions">
-          <a id="lb-code" class="btn" href="#" target="_blank" rel="noopener">View Code</a>
-          <a id="lb-video" class="btn muted" href="#" target="_blank" rel="noopener">Watch Video</a>
+          <a id="lb-code" class="btn" href="#" target="_blank">View Code</a>
+          <a id="lb-video" class="btn muted" href="#" target="_blank">Watch Video</a>
           <button id="lb-download" class="btn outline">Download</button>
         </div>
       </div>
     </div>
-    <div class="lightbox-backdrop" tabindex="-1" data-close="true"></div>
+    <div class="lightbox-backdrop" data-close="true"></div>
   </div>
 
   <footer>
-    <div>© <span id="year"></span> Samuel Gatimu Kariuki</div>
-    <div style="color:var(--muted)">Built with ⚡ & Passion</div>
+    <p>© <span id="year"></span> Samuel Gatimu Kariuki | Built with ⚡ & Passion</p>
   </footer>
 
-  <!-- Main script -->
   <script src="script.js"></script>
 </body>
 </html>
